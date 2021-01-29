@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+
+#full-logo{
+  margin: 20px auto;
+  display: inline-block;
+}
+
+#brandmark{
+  margin: 0px;
+  padding: 0px;
+  font-weight: 100;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: inline-block;
+  height: 50px;
+  padding-top: 7px;
+  padding-left: 4px;
+}
+
+#logo{
+  padding-top: 0px;
+  width: 50px;
+  float: left;
+}
