@@ -1,13 +1,17 @@
 import logo from './journal.svg';
+import Search from './components/Search'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <div id="full-logo">
-        <img id="logo" src={logo} />
-        <h1 id="brandmark">fieldmap</h1>
+        <header>
+          <img id="logo" src={logo} />
+          <h1 id="brandmark">fieldmap</h1>
+        </header>
       </div>
+      <Search />
     </div>
   );
 }

@@ -2,9 +2,39 @@
   text-align: center;
 }
 
+header{
+  margin-bottom: 20px;
+}
+
 #full-logo{
-  margin: 20px auto;
+  margin: 20px auto 0px;
   display: inline-block;
+}
+
+.tags{
+  width: 90%;
+  background-color: #000000;
+  margin: 20px auto 0px;
+  padding: 20px;
+  color: white;
+}
+
+.tag{
+  margin: 9px;
+  padding: 7px;
+  background: white;
+  display: inline;
+  color: black;
+  border-radius: 2px;
+}
+
+.tag span{
+  cursor: pointer;
+  position: relative;
+  top: -7px;
+  font-size: 16px;
+  font-weight: 800;
+  padding-left: 10px;
 }
 
 #brandmark{
@@ -13,13 +43,51 @@
   font-weight: 100;
   font-family: Georgia, 'Times New Roman', Times, serif;
   display: inline-block;
-  height: 50px;
+  line-height: 60px;
   padding-top: 7px;
   padding-left: 4px;
 }
 
 #logo{
   padding-top: 0px;
-  width: 50px;
-  float: left;
+  height: 60px;
+  position: relative;
+  top: 16px;
+}
+
+.counter{
+  background-color: black;
+  padding: 10px;
+  color: white;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.search-box{
+  width: 90%;
+  height: 30px;
+  border: 0;
+  border-bottom: 1px solid gray;
+}
+
+.articles{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.article{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 20px;
+  border: 1px solid black;
+  padding: 20px;
+  flex-grow: 4;
+  width: 24%;
+}
+
+.author{
+  text-align: left;
+  font-size: 12px;
+  padding-bottom: 3px;
 }
