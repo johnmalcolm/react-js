@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla</title>
+    <style>
+        html,body{
+            background-color: black;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #prompt{
+            color: orange;
+        }
+        #cursor, #cursor:focus{
+            background: black;
+            border: none;
+            color: white;
+            outline: 0px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        class Terminal{
+           constructor(name, event){
+               this.name = name
+               this.prompt = document.getElementById('prompt')
+               this.location = event.srcElement.URL
+               console.log(this.prompt)
+           }
+
+           start = () => {
+                console.log(this.location)
+                this.prompt.innerHTML = `> ${this.location}:<span style="color:green">${this.name}</span><span style="color:white">$<span>`
+           }
+
+       }
+
+       function boot(e){
+            // var username = prompt("Please enter your username");
+            const myTerminal = new Terminal(username = 'jmanderson', e)
+            myTerminal.start()
+       }
+
+       document.addEventListener("DOMContentLoaded", boot)
+
+    </script>
+     <div id="app">
+         <span id="prompt"></span>
+         <input id="cursor"></id>
+     </div>
+</body>
+</html>
