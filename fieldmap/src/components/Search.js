@@ -1,8 +1,5 @@
 import React, { Component } from "react";
-import MapChart from "./MapChart";
 
-const geoUrl =
-  "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
 class Search extends Component {
   state = {
     search: "",
@@ -135,9 +132,6 @@ class Search extends Component {
               );
             })}
           </div>
-        </div>
-        <div className="fieldmap">
-            <MapChart />
         </div>
         <div className="articles">
           {this.state.articlesArray.map((article) => {
